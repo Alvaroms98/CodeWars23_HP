@@ -21,8 +21,7 @@ def to_letters(num: int, letters: str) -> str:
         letters = div_letter + letters
         return letters
     else:
-        letters = to_letters(div, letters)
-    return letters
+        return to_letters(div, letters)
 
 try:
     inputt = int(inputt)
