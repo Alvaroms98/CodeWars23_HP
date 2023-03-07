@@ -11,7 +11,7 @@ for i in range(len(words)):
     if is_upper and i < last:
         memory.append(word)
     else:
-        if i == last:
+        if is_upper and i == last:
             memory.append(word)
             word = ""
         if len(memory) > 1:
